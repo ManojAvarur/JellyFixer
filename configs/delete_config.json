@@ -1,22 +1,22 @@
 [
     {
         "name": "logo",
-        "types": [".png", ".jpg", ".jpeg"],
+        "formats": [".png", ".jpg", ".jpeg"],
         "complete_match": false
     },
     {
         "name": "poster",
-        "types": [".png", ".jpg", ".jpeg"],
+        "formats": [".png", ".jpg", ".jpeg"],
         "complete_match": false
     },
     {
         "name": "backdrop",
-        "types": [".png", ".jpg", ".jpeg"],
+        "formats": [".png", ".jpg", ".jpeg"],
         "complete_match": false
     },
     {
         "name": "landscape",
-        "types": [".png", ".jpg", ".jpeg"],
+        "formats": [".png", ".jpg", ".jpeg"],
         "complete_match": false
     },
     {

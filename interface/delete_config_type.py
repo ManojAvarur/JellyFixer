@@ -1,6 +1,6 @@
-from typing import List, TypedDict
+from typing import List, TypedDict, NotRequired
 
 class DeleteConfigType(TypedDict):
     name: str
-    types: List[str]
-    complete_match: bool
+    formats: NotRequired[List[str]]
+    complete_match: NotRequired[bool]
