@@ -22,5 +22,9 @@
     {
         "name": "._.DS_Store",
         "complete_match": true
+    },
+    {
+        "name": "._DS_Store",
+        "complete_match": true
     }
 ]
