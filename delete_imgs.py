@@ -28,21 +28,27 @@ class DeleteImages(Base):
         for config in self.__configs:
             name: str            = config['name']
             formats: List[str]   = config['formats'] if 'formats' in config else []
-            complete_match: bool = config['complete_match'] if 'complete_match' in config else True
+            match_type: str      = config['match_type'] if 'match_type' in config else 'complete_match'
 
             if not formats:
-                if complete_match:
+                if match_type == "complete_match":
                     self.__complete_match(file_loc, file_name, name)
-                else:
+                    continue
+                
+                if match_type == "end_match":
                     self.__end_match(file_loc, file_name, name)
-                continue
+                    continue
 
             for format in formats:
                 match_name = f"{name}{format}"
-                if complete_match:
+                if match_type == "complete_match":
                     self.__complete_match(file_loc, file_name, match_name)
-                else:
+                    continue
+                
+                if match_type == "end_match":
                     self.__end_match(file_loc, file_name, match_name)
+                    continue
+
 
     def close(self) -> None:
         if not self.__files_to_delete:

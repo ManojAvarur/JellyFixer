@@ -2,29 +2,43 @@
     {
         "name": "logo",
         "formats": [".png", ".jpg", ".jpeg"],
-        "complete_match": false
+        "match_type": "end_match"
     },
     {
         "name": "poster",
         "formats": [".png", ".jpg", ".jpeg"],
-        "complete_match": false
+        "match_type": "end_match"
     },
     {
         "name": "backdrop",
         "formats": [".png", ".jpg", ".jpeg"],
-        "complete_match": false
+        "match_type": "end_match"
     },
     {
         "name": "landscape",
         "formats": [".png", ".jpg", ".jpeg"],
-        "complete_match": false
+        "match_type": "end_match"
+    },
+    {
+        "name": "folder",
+        "formats": [".png", ".jpg", ".jpeg"],
+        "match_type": "complete_match"
+    },
+    {
+        "name": "www.YTS.LT",
+        "formats": [".png", ".jpg", ".jpeg"],
+        "match_type": "complete_match"
     },
     {
         "name": "._.DS_Store",
-        "complete_match": true
+        "match_type": "complete_match"
     },
     {
         "name": "._DS_Store",
-        "complete_match": true
+        "match_type": "complete_match"
+    },
+    {
+        "name": ".DS_Store",
+        "match_type": "complete_match"
     }
 ]
